@@ -1,0 +1,181 @@
+.container {
+    margin-top: 20px; /* Espace au-dessus du conteneur */
+    /*background-color: black;*/
+}
+
+h1 {
+    text-align: center; /* Centre le titre */
+    margin-bottom: 20px; /* Espace en dessous du titre */
+    
+}
+
+.logo{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: auto;
+}
+
+.iver{
+    background-color: rgba(165, 42, 42, 0.7);
+}
+
+.row{
+    background-color: rgba(255, 255, 255, 0.728);
+}
+
+.navigator{
+    background-color: rgba(247, 192, 74, 0.836);
+}
+
+.navbar {
+    margin-top: 15px; /* Espace au-dessus de la barre de navigation */
+    justify-content: center;
+    margin-left: 75%;
+    
+}
+
+
+.nav-item {
+    margin-left: 5px; /* Espace entre les éléments du menu */
+    
+}
+
+.navbar-collapse{
+    position:absolute;
+
+}
+
+.section{
+    width: 100%;
+    min-height: 300%;
+    padding-bottom: 10%;
+    margin-bottom: 10%;
+}
+
+.sec{
+    margin: 200px 10%;
+}
+ .gauche{
+    float: left;
+    width: 30%;
+    height: auto;
+    margin-left:20px 13ppx ;
+ }
+
+ .droite{
+    float: left;
+    width: 90%;
+    height: auto;
+ }
+
+ .compteur{
+    margin-top: 10px; /*espace au dessus des compteur*/
+    font-size: 14px; /* taille de la police pour les compteur*/
+    color: #555; /* une couleur aux compteurx */
+ }
+
+ .tirait{
+    background-color: #ffd700;
+ }
+ .tiraite{
+    background-color: chartreuse;
+ }
+
+
+ /* détaille */
+
+ .image-text-container {
+    display: flex; /* Utilise Flexbox pour aligner horizontalement */
+    align-items: center; /* Aligne verticalement les éléments au centre */
+    margin-bottom: 20px; /* Espace entre les lignes */
+}
+
+.image-container {
+    margin-right: 150px; /* Espace entre l'image et le texte */
+    padding-top: 20px;
+    height: auto;
+}
+
+.image-container img {
+    width: 450px; /* Taille de l'image */
+    height: auto; /* Conserve les proportions */
+}
+
+.text-container {
+    flex: 1; /* Limite la largeur du texte */
+    height: auto;
+}
+
+.image-titre{
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Cv.html.css*/
+
+.baregrand{
+    background-color: rgb(243, 203, 150);
+    height: 1100PX;
+}
+
+ .mainhref{
+    width: 755px;
+    height: 1100px;
+    position: absolute;
+    left: 725px;
+    background-color: rgb(243, 243, 214);
+    padding: 30px 30px;
+ }
+ 
+ .card-body-bo{
+    height: 185px;
+    padding-left: 12px;
+ }
+
+.colone{
+    background-color: rgba(16, 69, 92, 0.932);
+    color: white;
+}
+.colon{
+    background-color: rgb(57, 93, 121);
+    color: white;
+}
+.colo{
+    background-color: rgb(34, 100, 138);
+    color: rgb(255, 255, 255);
+}
+
+/* contact*/
+.col-4{
+    background-color: rgb(255, 255, 255);
+}
+
+.icon-button {
+    font-size: 24px; /* Taille des icônes */
+    margin: 5px; /* Espace autour des icônes */
+    cursor: pointer; /* Change le curseur quand on passe la souris */
+}
+.icon-button:hover {
+    color: #007bff; /* Changement de couleur au survol */
+}
+
+.star {
+    font-size: 24px; /* Taille des étoiles */
+    color: #ffd700; /* Couleur dorée pour les étoiles */
+    cursor: pointer; /* Change le curseur quand on passe la souris */
+}
+.star:hover {
+    color: #ffdb58; /* Couleur au survol */
+}
+.rating {
+    display: flex; /* Utilise Flexbox pour aligner horizontalement */
+    justify-content: center; /* Centre les étoiles horizontalement */
+    margin: 10px 0; /* Espace au-dessus et en dessous */
+}
+
+.colonedela gauche{
+    background-color: cadetblue;
+}

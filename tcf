@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Annotation par Étoiles</title>
+    <style>
+        .star {
+            font-size: 24px; /* Taille des étoiles */
+            color: #ffd700; /* Couleur dorée pour les étoiles */
+            cursor: pointer; /* Change le curseur quand on passe la souris */
+        }
+        .star:hover {
+            color: #ffdb58; /* Couleur au survol */
+        }
+        .rating {
+            display: flex; /* Utilise Flexbox pour aligner horizontalement */
+            justify-content: center; /* Centre les étoiles horizontalement */
+            margin: 10px 0; /* Espace au-dessus et en dessous */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h1>Votre Contenu</h1>
+        
+        <div class="rating">
+            <span class="star" title="1 étoile" data-value="1"><i class="fas fa-star"></i></span>
+            <span class="star" title="2 étoiles" data-value="2"><i class="fas fa-star"></i></span>
+            <span class="star" title="3 étoiles" data-value="3"><i class="fas fa-star"></i></span>
+            <span class="star" title="4 étoiles" data-value="4"><i class="fas fa-star"></i></span>
+            <span class="star" title="5 étoiles" data-value="5"><i class="fas fa-star"></i></span>
+        </div>
+        
+        <p id="rating-output">Note : 0 étoiles</p> <!-- Affichage de la note sélectionnée -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Script pour gérer la notation par étoiles
+        const stars = document.querySelectorAll('.star');
+        const output = document.getElementById('rating-output');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const value = star.getAttribute('data-value');
+                output.textContent = `Note : ${value} étoiles`;
+                
+                // Met à jour la couleur des étoiles sélectionnées
+                stars.forEach(s => {
+                    s.style.color = s.getAttribute('data-value') <= value ? '#ffd700' : '#ccc';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!--une grande partie de mon travail-->
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="card col-sm-2">
+            <div class="card mot-cles py-4 mt-2" style="padding: 10px;">
+                <p>se retrouver <span><br>Technologie <br>Fonctionnalité <br>dynamisme</span></p>
+               <p>la topologie des différentes forme</p>
+               <p>Les statistiques de la femmes</p>
+              <p>Je finirais de faire comme </p>
+            </div>
+            <div class="card mot-cles py-4 mt-2" style="padding: 10px;">
+                    <p>se retrouver <span><br>Technologie <br>Fonctionnalité <br>dynamisme</span></p>
+                    <p>la topologie des différentes forme</p>
+                    <p>Les statistiques de la femmes</p>
+                    <p>Je finirais de faire comme </p>
+            </div>
+
+            <div class="card mot-cles py-4 mt-2" style="padding: 10px;">
+                     <p>se retrouver <span><br>Technologie <br>Fonctionnalité <br>dynamisme</span></p>
+                     <p>la topologie des différentes forme</p>
+                     <p>Les statistiques de la femmes</p>
+                     <p>Je finirais de faire comme </p>
+            </div>
+
+            <div class="card mot-cles py-4 mt-2" style="padding: 10px;">
+                    <p>se retrouver <span><br>Technologie <br>Fonctionnalité <br>dynamisme</span></p>
+                    <p>la topologie des différentes forme</p>
+                    <p>Les statistiques de la femmes</p>
+                    <p>Je finirais de faire comme </p>
+            </div>
+        </div>
+            <div class="col-sm-10">
+                <div class="row mt-5">
+                    <div class="col-sm-8">
+                        <div class="row">
+                            <div class="col-sm-8 mt-2 colonedela gauche" style="padding-left: 150px;">
+                                <h4>Une des raisons pour étudier à Etic-University</h4>
+                                <hr>
+                                <img src="image/toph etic/voyage.jpg" alt="josue" width="600px">
+                                <h5 my-3>Josue KOUAKOU Josue</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste consequuntur cupiditate nihil dolorum, et quod ut dolor vel exercitationem cumque placeat sequi perspiciatis animi deleniti illo fugiat corrupti recusandae sit.</p>
+                                <div>
+                                    <span class="icon-button" title="J'aime">
+                                        <i class="fas fa-thumbs-up"></i>
+                                    </span>
+                                    <span class="icon-button" title="Je n'aime pas">
+                                        <i class="fas fa-thumbs-down"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                     <div class="col-sm-4">
+                        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias doloribus cupiditate iusto commodi impedit est repellat iure magni voluptates libero dignissimos blanditiis dolore saepe nesciunt, consequuntur eius nobis. Ipsum aperiam numquam, doloribus inventore suscipit, nesciunt dignissimos tempore ut autem at id necessitatibus repudiandae esse velit, nemo alias architecto dicta explicabo?</h4>
+                        <div class="compteur">
+                            <span>Ouverture: 150</span> |
+                            <span>Lecture: 20</span>  |
+                            <span>Ecriture: 10</span>
+                        </div>
+                             <div class="rating">
+                                    <span class="star" title="1 étoile" data-value="1"><i class="fas fa-star"></i></span>
+                                    <span class="star" title="2 étoiles" data-value="2"><i class="fas fa-star"></i></span>
+                                    <span class="star" title="3 étoiles" data-value="3"><i class="fas fa-star"></i></span>
+                                    <span class="star" title="4 étoiles" data-value="4"><i class="fas fa-star"></i></span>
+                                    <span class="star" title="5 étoiles" data-value="5"><i class="fas fa-star"></i></span>
+                             </div>
+                                
+                                <p id="rating-output">Note : 0 étoiles</p> <!-- Affichage de la note sélectionnée -->
+                    </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+<div class="container mt-5">
+    <!--<div class="row">
+        <div class="col-sm-4 colone">
+            <h4>Je suis la colone de gauche</h4>
+            <img src="image/josue.jpg" alt="josue">
+            <h5>Josue KOUAKOU Josue</h5>
+        </div>
+        <div class="col-sm-8">
+            <div class="row">
+                <div class="col-sm-6 colon">
+                    <h4>je suis un paragraphe da la colone de droite</h4>
+                    <img src="image/josue.jpg" alt="etic">
+                    <h5>Josue KOUAKOU</h5>
+                </div>
+                <div class="col-sm-6 colo">
+                    <h4>je suis une deuxième partie de la colone de droite</h4>
+                    <img src="image/josue.jpg" alt="jojo">
+                    <h5>Josue KOUAKOU N'guessan</h5>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+   
